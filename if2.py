@@ -24,3 +24,20 @@ def main():
     
 if __name__ == "__main__":
     main()
+for _ in range(3):
+    line1 = str(input('Введите строку 1: ').split(' '))
+    line2 = str(input('Введите строку 2: ').split(' '))
+    if (type(line1)==str) and (type(line2)==str):
+        print('Это строка')
+    else:
+        print(0)
+    if len(line1)==len(line2):
+        print(1)
+    else:
+        print(0)
+    if len(line1) > len(line2):
+        print(2)
+    if len(line1) != len(line2) and line2 == ('learn'):
+        print(3)
+    else:
+        print(0)
